@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title%></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+      <!-- <header>
+        <h1>
+            Superelectronics
+        </h1>
+      </header> -->
+    <h4>
+      Kindly share your details. Our team will connect to share Exclusive
+      Offers.
+    </h4>
+    <% if(message.length>0) { %>
+  <h4><%= message%></h4>
+  <% }%>
+    <div class="container">
+      <form method="POST" action="/">
+        <div class="mb-3">
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <p id="error"></p>
+          <input
+            type="text"
+            name="mobile"
+            class="form-control"
+            id="mobile"
+            placeholder="Enter Your Mobile Number"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            name="address"
+            class="form-control"
+            id="address"
+            placeholder="Enter Your City Name"
+          />
+        </div>
+        <div class="mb-3">
+          <select
+            name="product"
+            id="product"
+            style="width: 100%; height: 40px"
+            class="form-select"
+          >
+            <option value="null" selected>--Select Products--</option>
+            <option value="Air Conditioner">Air Conditoner</option>
+            <option value="Air Purifier">Air Purifier</option>
+            <option value="Ceiling Fan">Ceiling Fan</option>
+            <option value="DishWaher">Dishwasher</option>
+            <option value="Refrigerator">Refrigerator</option>
+            <option value="LED TV">LED Tv</option>
+            <option value="Microwave Oven">Microwave Oven</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="Water Purifier">Water Purifier</option>
+            <option value="Boom Music System">Xboom Music System</option>
+            <option value="Wireless Buds">Wireless Buds</option>
+          </select>
+        </div>
+
+        <div class="mb-3 flexcontainer">
+          <button type="submit" id="submit" class="btn btn-primary">
+            Submit
+          </button>
+          <a href="/"> Reset</a>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+  </body>
+</html>
