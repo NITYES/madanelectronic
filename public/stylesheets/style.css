@@ -22,7 +22,7 @@ body {
 
 
  .logo{
-   width: 400px;
+   width: 40%;
    height: 100%;
    display: flex;
    flex-direction: row;
@@ -44,9 +44,8 @@ font-size: 15px;
 
 .title{
   color: #ffffff;
-  margin:auto;
   font-size: 30px;
-  
+  line-height: 150px;
 }
 
   button {
@@ -93,42 +92,10 @@ font-size: 15px;
     margin-left: 5px;
   }
   
-  @media only screen and (max-width: 775px){
-  input[type="checkbox"]{
-   margin-left: 10px;
-   margin-bottom: 10px;
-  }
+
+
+
   
-  .location{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-  }
-  h4{
-    font-size: 15px;
-  }
-  button{
-    width: 100%;
-    display: block;
-    margin: 5px auto;
-  }
-  a{
-    width: 100%;
-    display: block;
-        text-align: center;
-  }
-
-  footer{
-    flex-direction: column;
-  }
-
-  .lg-best-shop{
-    width: 100%;
-  }
-  
-  } 
-
-
   footer{
     margin-top: 30px;
     display: flex;
@@ -156,6 +123,54 @@ font-size: 15px;
   .address :last-child{
     color: rgb(255, 255, 255);
   }
+  @media only screen and (max-width: 775px){
+  input[type="checkbox"]{
+   margin-left: 10px;
+   margin-bottom: 10px;
+  }
+  
+  .location{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+  }
+  h4{
+    font-size: 15px;
+  }
+  button{
+    width: 100%;
+    display: block;
+    margin: 5px auto;
+  }
+  a{
+    width: 100%;
+    display: block;
+        text-align: center;
+  }
+
+  
+
+  .lg-best-shop{
+    width: 100%;
+    text-align: center;
+  }
+
+  .multibrands{
+    width: 100%;
+    text-align: center;
+  }
+
+  header .title{
+    font-size: 20px;
+  }
+  
+footer{
+  flex-direction: column;
+}
+
+  } 
+
+
 
   
   
