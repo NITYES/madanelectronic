@@ -15,7 +15,7 @@ body {
 
   header{
     background-color: #a01638;
-      height: 150px;
+      height: 15vh;
       display: flex;
   }
 
@@ -45,7 +45,8 @@ font-size: 15px;
 .title{
   color: #ffffff;
   font-size: 30px;
-  line-height: 150px;
+  line-height: 15vh;
+  text-transform: uppercase;
 }
 
   button {
@@ -57,6 +58,12 @@ font-size: 15px;
   }
   .container {
     background: #ccc;
+    height: 55vh;
+    
+  }
+  .kindly{
+    height: 15vh;
+    margin: auto;
   }
   a {
     display: inline-block;
@@ -92,20 +99,17 @@ font-size: 15px;
     margin-left: 5px;
   }
   
-
-
-
-  
   footer{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    background-color: #801933;
+    background-color: #000000;
     bottom: 0;
-    height: 100%;
+    height: 15vh;
   }
 
   .lg-best-shop{
+    height: 100%;
     width: 50%;
     text-align: center;
   }
@@ -117,6 +121,15 @@ font-size: 15px;
     text-align: center;
     width: 50%;
   }
+
+  .address p{
+    display: inline;
+  }
+
+  .address span{
+    color: #a01638 !important;
+  }
+
   .address{
             color: white;
   }
@@ -161,11 +174,16 @@ font-size: 15px;
   }
 
   header .title{
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  .kindly{
+    font-size: 10px;
   }
   
 footer{
   flex-direction: column;
+  height: 40vh;
 }
 
   } 
