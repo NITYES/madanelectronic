@@ -130,8 +130,13 @@ min-height: 10vh;
     width: 50%;
   }
 
+  .address{
+    display: flex;
+  }
+
   .address p{
-    display: inline-block;
+    display: block;
+    width: 50%;
     font-family: 'PT Sans', sans-serif;
 margin: 2px 0;
 cursor: pointer;

@@ -2,7 +2,7 @@
 
 let nameValue=null;
 let mobileValue=null;
-let addressValue=null;
+let pincodeValue=null;
 let productValue=null;
 
 const user=document.getElementById('name');
@@ -58,8 +58,10 @@ mobile.addEventListener('keyup',(e)=>{
  address.addEventListener('keyup',(e)=>{
     addressValue=e.target.value
     allFilles();
+}
 
- })
+ ) 
+
 
  //product
  product.addEventListener('change',(e)=>{
