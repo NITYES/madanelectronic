@@ -56,6 +56,8 @@ mobile.addEventListener('keyup',(e)=>{
 
 //address
  address.addEventListener('keyup',(e)=>{
+
+    
     addressValue=e.target.value
     allFilles();
 }
@@ -82,7 +84,7 @@ else{
 
 function allFilles(){
 
-    if(nameValue && mobileValue && addressValue && productValue ){
+    if(nameValue && mobileValue && addressValue.length>4 && productValue ){
         submit.disabled=false;
     }else{
         submit.disabled=true;

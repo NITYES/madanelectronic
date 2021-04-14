@@ -70,8 +70,9 @@ min-height: 10vh;
    }
   .kindly{
     min-height: 15vh;
-    text-align: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     margin: auto;
   }
   a {
@@ -111,36 +112,47 @@ min-height: 10vh;
     flex-direction: row;
     justify-content:space-between;
     background-color: #000000;
-    bottom: 0;
     padding: 10px;
     min-height: 15vh;
-  }
-
-  .lg-best-shop{
-    height: 100%;
-    width: 50%;
-    text-align: center;
+    position: relative;
   }
   footer h4{
     color: white;
     font-size: 25px;
   }
-  .multibrands{
+  .lg-best-shop{
+    position: relative;
+    height: 100%;
+    width: 50%;
     text-align: center;
+  }
+ 
+  .multibrands{
+    position: relative;
+    text-align: center;
+    height: 100%;
     width: 50%;
   }
+
+
 
   .address{
     display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
-  .address p{
-    display: block;
-    width: 50%;
+  .address {
     font-family: 'PT Sans', sans-serif;
 margin: 2px 0;
 cursor: pointer;
   }
+  .address .name{
+    text-align: start;
+width: 50%;
+  }
+
+ 
 
   .address > p:hover{
     color: aqua;
@@ -188,17 +200,19 @@ i{
   }
 
   
-
+  footer{
+    flex-direction: column;
+    min-height: 60vh;
+    justify-content: center;
+  }
   .lg-best-shop{
     height: 50%;
     width: 100%;
-    text-align: center;
   }
 
   .multibrands{
     height: 50%;
     width: 100%;
-    text-align: center;
   }
 
   header .title{
@@ -209,14 +223,12 @@ i{
     font-size: 16px;
   }
   
-footer{
-  flex-direction: column;
-  height: 40vh;
-}
 
 
-.address p{
- font-size:10px;
+
+
+.address{
+  margin: 0;
 }
 
   } 

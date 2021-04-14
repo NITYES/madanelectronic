@@ -34,7 +34,7 @@ try {
         autoIndex: true,
       },   
       (error) => {
-        if (error) console.log(error);
+        if (error)return  console.log(error);
         console.log("connected to the database");
       }
     );
